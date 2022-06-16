@@ -8,7 +8,7 @@ b. na podstawie adresu IP klienta łączącego się z serwerem, w przeglądarce 
 
 ODPOWIEDŹ: plik index.html
 
-![image](https://user-images.githubusercontent.com/2741563/174152389-5a509824-98e3-4c8b-9b2f-9c39b2578806.png)
+![image](https://user-images.githubusercontent.com/27415763/174156477-7855e673-1bcc-42e2-b45f-cf9c7046d92b.png)
 
 2. (max. 50%)
 Opracować plik Dockerfile, który pozwoli na zbudowanie obrazu kontenera realizującego funkcjonalność opisaną w punkcie 1. Przy ocenie brane będzie sposób opracowania tego pliku (dobór obrazu bazowego, wieloetapowe budowanie obrazu, ewentualne wykorzystanie warstwy scratch, optymalizacja pod kątem funkcjonowania cache-a w procesie budowania). Dockerfile powinien również zawierać informację o autorze tego pliku (ponownie imię i nazwisko studenta). 
