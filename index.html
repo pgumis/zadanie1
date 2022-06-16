@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Static website with NGINX</title>
+</head>
+
+<body>
+    
+    <div id="log"></div>
+    
+    <script>
+        (function () {
+            if (!console) {
+                console = {};
+            }
+            var old = console.log;
+            var logger = document.getElementById('log');
+            console.log = function (message) {
+                if (typeof message == 'object') {
+                    logger.innerHTML += (JSON && JSON.stringify ? JSON.stringify(message) : String(message)) + '<br />';
+                } else {
+                    logger.innerHTML += message + '<br />';
+                }
+            }
+        })();
+       
+        console.log(`Data: ${new Date().toLocaleString('pl-PL')}`)
+        console.log('Autor: Pawel Gumiela')
+        console.log('Port: 8081')
+   
+</script>
+</body>
+
+</html>
